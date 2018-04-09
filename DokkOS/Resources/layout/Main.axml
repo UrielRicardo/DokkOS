@@ -1,18 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent">
-    <HorizontalScrollView
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1">
-        <TextView
-            android:id="@+id/test_view"
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:padding="10dp"
-            android:textSize="50sp"
-            android:text="hi fren" />
-    </HorizontalScrollView>
+<LinearLayout xmlns:p1="http://schemas.android.com/apk/res/android"
+    p1:orientation="vertical"
+    p1:layout_width="match_parent"
+    p1:layout_height="match_parent"
+    p1:id="@+id/linearLayout1">
+    <LinearLayout
+        p1:orientation="vertical"
+        p1:layout_width="match_parent"
+        p1:layout_height="match_parent"
+        p1:id="@+id/linearLayout2"
+        p1:minWidth="25px"
+        p1:minHeight="25px" />
 </LinearLayout>
